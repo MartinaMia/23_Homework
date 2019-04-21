@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="article-clean">
+        <div class="container">
+            <div class="intro">
+                <h1 class="text-center">Herzlich Willkommen!</h1>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6"><img src="static/img/Martina Knjisa.jpg" style="height: 300px;width: initial;border-radius: 15px;margin: 50px;"></div>
+                <div class="col-md-6" style="font-family: Lora, serif;">
+                    <div style="margin: 50px;"></div>
+                    <p style="font-family: Lora, serif;font-size: 20px;color: rgb(86,88,91);">Vielen Dank für Ihr Interesse!&nbsp;</p>
+                    <p class="text-style" style="font-family: Lora, serif;font-size: 20px;color: rgb(86,88,91);">Bitte geben Sie Ihren Namen und das Passwort ein, um mehr über mich zu erfahren:&nbsp;</p>
+                    <form method="post" action="/login">
+                    <input class="shadow-sm input-style" type="text" name="user-name" style="margin: 0px;margin-left: 140px;margin-top: 20px;background-color: #ededee;" placeholder="Ihr Name">
+                        <input class="shadow-sm input-style" type="email" name="user-email" style="margin: 0px;margin-left: 140px;margin-top: 20px;background-color: #ededee;" placeholder="E-Mail">
+                    <input
+                        class="shadow-sm input-style" type="password" name="password" style="margin-top: 20px;" placeholder="Ihr Passwort"><br>
+                    <button style="margin: 0px;margin-left: 140px;margin-top: 20px;background-color: #ededee;">Bestätigen</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-style" style="margin-top: 50px;margin-left: 50px;font-family: Lora, serif;font-size: 20px;color: rgb(86,88,91);">Ich freue mich schon, bald von Ihnen zu hören!&nbsp;</p>
+                </div>
+                <div class="col-md-6"><img src="static/img/desk.jpg" style="height: 250px;width: initial;border-radius: 15px;margin: 50px;"></div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

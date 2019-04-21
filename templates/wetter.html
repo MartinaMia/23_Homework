@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <p>Ort: {{ data.name }}</p>
+    <p>Wetter Beschreibung: {{ data.weather[0].description }}</p>
+    <p>Temperatur: {{ data.main.temp }}</p>
+
+    <!-- Widget of website -->
+    <div id="openweathermap-widget-11"></div>
+    <div id="openweathermap-widget-15"></div>
+
+    <script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];
+        window.myWidgetParam.push({id: 15,cityid: '2886242',appid: '4441df35f38b74f5fba48f33d0efb41a',
+        units: 'metric',containerid: 'openweathermap-widget-15',  });
+        (function() {var script = document.createElement('script');
+        script.async = true;script.charset = "utf-8";
+        script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";
+        var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);  })();</script>
+{% endblock content %}
